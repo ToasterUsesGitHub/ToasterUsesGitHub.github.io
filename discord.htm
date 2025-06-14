@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-darkreader-mode="dynamic" data-darkreader-scheme="dark" class="mmpzmajo idc0_350" style="height: 100%; margin: 0; display: flex; justify-content: center; align-items: center;">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="discord automod bypass">
+    <meta property="og:description" content="discord automod bypass">
+    <meta property="og:image" content="./img/Screenshot 2024-02-24 131859.png">
+    <link rel="icon" type="image/png" href="https://bypass.zuot.cc/img/Screenshot%202024-02-24%20131859.png" sizes="32x32">
+
+    <title>discord automod bypass</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="Discord%20Automod%20Bypasser%20V3_files/css2.css" rel="stylesheet">
+
+    <style>
+        /* Styles to remove background and center content */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: none !important; /* Ensure no background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Allows vertical stacking of content if needed */
+        }
+
+        .content-wrapper {
+            background-color: transparent !important; /* Ensure no background on wrapper */
+            box-shadow: none !important; /* Remove any box shadow */
+            padding: 0 !important; /* Remove any padding */
+            margin: 0 !important; /* Remove any margin */
+            width: auto; /* Allow content to dictate width */
+            max-width: 90%; /* Prevent it from being too wide on small screens */
+        }
+
+        .bypasser-container {
+            background-color: #28303d; /* Keep the original background for the tool itself */
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Keep the shadow for the tool */
+            color: #e8e6e3; /* Ensure text color is visible */
+        }
+
+        /* Basic styling for inputs and buttons within the tool, derived from original */
+        .io-box, .select-box {
+            width: calc(100% - 20px); /* Adjust width considering padding */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #4c4c4c;
+            border-radius: 5px;
+            background-color: #181a1b; /* Dark background for inputs */
+            color: #e8e6e3; /* Light text for inputs */
+        }
+
+        .btn {
+            background-color: #007bff; /* Example button color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        #outputText {
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid #4c4c4c;
+            border-radius: 5px;
+            background-color: #181a1b;
+            min-height: 50px; /* Give it some visible height */
+            text-align: left;
+            word-break: break-all; /* Ensures long words break and wrap */
+        }
+    </style>
+    <script src="Discord%20Automod%20Bypasser%20V3_files/script.js" defer="defer"></script>
+</head>
+<body>
+    <main class="content-wrapper">
+        <div class="bypasser-container">
+            <h1>
+                discord automod bypass
+            </h1>
+
+            <textarea id="inputBox" class="io-box" placeholder="input"></textarea>
+
+            <select id="bypassSelect" class="select-box">
+                <option value="invisible" selected="selected">Universal (basic)</option>
+                <option value="combo">Undetectable</option>
+                <option value="unicode">Unicode Leetspeak</option>
+                <option value="cyrillic">Cyrillic Letters</option>
+                <option value="emoji">Emoji Separator</option>
+                <option value="dot">Dot Separator</option>
+                <option value="strikethrough">Combining Characters</option>
+                <option value="rot13">ROT13 Obfuscation</option>
+                <option value="reverse">Reverse Text</option>
+                <option value="base64">Base64 Encode</option>
+            </select>
+
+            <div id="outputText"></div>
+
+            <button id="copyButton" class="btn">
+                <span>Copy</span>
+            </button>
+
+            </div>
+    </main>
+
+</body>
+</html>
